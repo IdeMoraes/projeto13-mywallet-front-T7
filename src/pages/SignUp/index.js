@@ -43,7 +43,7 @@ function SignUp(){
                 <Input placeholder='Confirme a senha'type='password' onChange={(event)=>handleChange(event)} name='confirmPassword' value= {formData.event} required/>
                 <Button>Cadastrar</Button>
             </Form>
-            <StyledLink>Já tem uma conta? Entre agora!</StyledLink>
+            <StyledLink to='/'>Já tem uma conta? Entre agora!</StyledLink>
         </Container>
     )
 }
