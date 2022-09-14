@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import api from "../../services/api.js";
 import {Container, Form, Input, Button, StyledLink} from '../../components/FormComponents.js'
+import Logotype from "../../components/logotype.js";
 
 function SignUp(){
     const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ function SignUp(){
     }
     return(
         <Container>
-            <h1>MyWallet</h1>
+            <Logotype>MyWallet</Logotype>
             <Form onSubmit={handleSubmit}>
                 <Input placeholder='Nome' type='text' onChange={(event)=>handleChange(event)} name='name' value= {formData.name} required/>
                 <Input placeholder='E-mail'type='email' onChange={(event)=>handleChange(event)} name='email' value= {formData.email} required/>

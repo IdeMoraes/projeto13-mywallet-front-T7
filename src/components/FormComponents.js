@@ -7,16 +7,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0px 25px;
-    h1{
-        font-family: 'Saira Stencil One', cursive;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-bottom: 28px;
-
-    }
+    align-self: ${(props)=>props.alignSelf||'auto'};
 `;
 const Form = styled.form`
     display: flex;
